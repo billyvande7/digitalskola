@@ -25,7 +25,7 @@ public class SeleniumTest {
         WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ycpt")));
 
-        webDriver.findElement(By.id("login")).sendKeys("automation");
+        webDriver.findElement(By.id("login")).sendKeys("automationtest");
         webDriver.findElement(By.xpath("/html/body/div/div[2]/main/div[3]/div/div[1]/div[2]/div/div/form/div/div[1]/div[4]/button/i")).click();
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("bname")));
